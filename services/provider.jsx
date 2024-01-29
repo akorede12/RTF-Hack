@@ -12,6 +12,7 @@ import { mainnet, sepolia, hardhat } from 'wagmi/chains'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 import { SessionProvider } from 'next-auth/react'
+require("dotenv").config();
 
 const pegasus = {
   id: 1891,
@@ -40,7 +41,7 @@ const { chains, publicClient } = configureChains(
   [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID }), publicProvider()]
 )
 
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID
+const projectId = "963bc55247e84a7a06558c784100efd0"
 
 const connectors = connectorsForWallets([
   {
