@@ -10,7 +10,7 @@ const Header = () => {
     >
       <Link href={'/'}>
         <p className="text-[#ff385c] flex items-center text-xl">
-          <FaAirbnb className=" font-semibold" />
+          {/* <FaAirbnb className=" font-semibold" /> */}
           BookingBox-TX
         </p>
       </Link>

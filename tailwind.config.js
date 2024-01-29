@@ -1,5 +1,7 @@
+const {nextui} = require("@nextui-org/react");
+
 module.exports = {
-  darkMode: false,
+  darkMode: "class",
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
@@ -7,5 +9,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [nextui()],
 }
