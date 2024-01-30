@@ -62,13 +62,13 @@ const wagmiConfig = createConfig({
 })
 
 const demoAppInfo = {
-  appName: 'DappBnb dApp',
+  appName: 'BookingBox-TX dApp',
 }
 
 const getSiweMessageOptions = () => ({
   statement: `
   Once you're signed in, you'll be able to access all of our dApp's features.
-  Thank you for partnering with DappBnb!`,
+  Thank you for partnering with BookingBox-TX!`,
 })
 
 const Providers = ({ children, pageProps }) => {
