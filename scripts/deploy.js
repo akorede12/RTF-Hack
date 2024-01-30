@@ -11,6 +11,7 @@ async function deployContract() {
     await contract.waitForDeployment()
 
     console.log('Contracts deployed successfully.')
+    console.log(contract.target);
     return contract
   } catch (error) {
     console.error('Error deploying contracts:', error)
