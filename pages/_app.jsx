@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import '@rainbow-me/rainbowkit/styles.css'
 import 'react-datepicker/dist/react-datepicker.css'
 import { useEffect, useState } from 'react'
-import Providers from '@/services/provider'
+import Provider from 'react-redux'
 import { Footer, Header } from '@/components'
 import { store } from '@/store'
 import { NextUIProvider } from '@nextui-org/react'
@@ -95,25 +95,27 @@ export default function App({ Component, pageProps }) {
     return (
       <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider theme={darkTheme()} chains={chains} appInfo={appInfo}>
-          <div className="relative h-screen min-w-screen">
-            <Header />
-            <Component {...pageProps} />
-            <div className="h-20"></div>
-            <Footer />
-          </div>
+          <Provider store={store}>
+            <div className="relative h-screen min-w-screen">
+              <Header />
+              <Component {...pageProps} />
+              <div className="h-20"></div>
+              <Footer />
+            </div>
 
-          <ToastContainer
-            position="bottom-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="dark"
-          />
+            <ToastContainer
+              position="bottom-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
+          </Provider>
         </RainbowKitProvider>
       </WagmiConfig>
     )
