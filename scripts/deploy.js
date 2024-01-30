@@ -59,3 +59,5 @@ main().catch((error) => {
   console.error('Unhandled error:', error)
   process.exitCode = 1
 })
+
+// Previously deployed contract: 0x3033AD45a91508B088C4BdE8b78045f52Bb1a4A5
