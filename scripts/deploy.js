@@ -61,3 +61,4 @@ main().catch((error) => {
 })
 
 // Previously deployed contract: 0x3033AD45a91508B088C4BdE8b78045f52Bb1a4A5
+// Lightlink Enterprise mode Transaction hash: 0x517dd346fd72efbe2d28e6166dccd780d4968184d32e3987bffed0d48dfadbf0

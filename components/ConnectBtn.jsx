@@ -50,7 +50,7 @@ const ConnectBtn = () => {
               if (chain.unsupported) {
                 return (
                   <button
-                    className="bg-transparent border border-gray-300 hover:bg-red-600
+                    className="bg-transparent border border-slate-900 hover:bg-cyan-600
                         py-2 px-6 text-black hover:text-white rounded-full
                         transition duration-300 ease-in-out"
                     onClick={openChainModal}
@@ -66,7 +66,7 @@ const ConnectBtn = () => {
                   <button
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}
-                    className="bg-transparent border border-gray-300 hover:bg-red-600
+                    className="bg-transparent border border-slate-900 hover:bg-cyan-600
                     py-2 px-6 text-black hover:text-white rounded-full
                     transition duration-300 ease-in-out"
                     type="button"
@@ -96,7 +96,7 @@ const ConnectBtn = () => {
                   </button>
 
                   <button
-                    className="bg-transparent border border-gray-300 hover:bg-red-600
+                    className="bg-transparent border border-slate-900 hover:bg-cyan-600
                     py-2 px-6 text-black hover:text-white rounded-full
                     transition duration-300 ease-in-out"
                     onClick={openAccountModal}

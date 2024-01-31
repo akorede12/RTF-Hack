@@ -113,7 +113,8 @@ export default function Add() {
               <button
                 onClick={addImage}
                 type="button"
-                className="p-2 bg-[#ff385c] text-white rounded-full text-sm"
+                className="p-2 bg-cyan-300 text-cyan-900 rounded-full text-sm border-transparent transition-all duration-500 ease-in-out hover:border hover:text-[#ff385c] hover: border-[#ff385c] hover:bg-white
+                hover:border-[#ff385c]"
               >
                 Add image link
               </button>
@@ -197,7 +198,7 @@ export default function Add() {
           <button
             type="submit"
             className={`flex flex-row justify-center items-center
-            w-full text-white text-md bg-[#ff385c]
+            w-full text-cyan-900 text-md bg-cyan-300
             py-2 px-5 rounded-full drop-shadow-xl hover:bg-white
             border-transparent border
             hover:hover:text-[#ff385c]

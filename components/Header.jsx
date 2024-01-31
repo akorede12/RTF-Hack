@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <header
       className="flex justify-between items-center p-4 px-8
-    sm:px-10 md:px-14 border-b-2 border-b-slate-200 w-full"
+    sm:px-10 md:px-14 border-b-2 border-b-slate-900 w-full bg-cyan-300"
     >
       <Link href={'/'}>
-        <p className="text-[#ff385c] flex items-center text-xl">
+        <p className="text-cyan-800 flex items-center text-3xl">
           {/* <FaAirbnb className=" font-semibold" /> */}
           BookingBox-TX
         </p>
@@ -24,16 +24,16 @@ const Header = () => {
 const ButtonGroup = () => {
   return (
     <div
-      className="md:flex hidden items-center justify-center border-gray-300
-      border overflow-hidden rounded-full cursor-pointer"
+      className="md:flex hidden items-center justify-center border-slate-900
+      border overflow-hidden rounded-md cursor-pointer"
     >
       <div className="inline-flex" role="group">
+        <Link href={'/about/about'}>
         <button
           className="
-            rounded-l-full
             px-5
             py-3
-            text-[#ff385c]
+            text-cyan-800
             font-medium
             text-sm
             leading-tight
@@ -44,16 +44,17 @@ const ButtonGroup = () => {
             ease-in-out
           "
         >
-          Anywhere
+          About
         </button>
+        </Link>
         <Link href={'/room/add'}>
           <button
             type="button"
             className="
               px-5
               py-3
-              border-x border-gray-300
-              text-[#ff385c]
+              border-x border-slate-900
+              text-cyan-800
               font-medium
               text-sm
               leading-tight
@@ -70,10 +71,9 @@ const ButtonGroup = () => {
 
         <button
           className="
-            rounded-r-full
             px-5
             py-3
-            text-[#ff385c]
+            text-cyan-800
             font-medium
             text-sm
             leading-tight
