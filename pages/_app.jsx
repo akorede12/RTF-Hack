@@ -48,7 +48,7 @@ const pegasus = {
 }
 
 const { chains, publicClient } = configureChains(
-  [mainnet, pegasus, sepolia, hardhat],
+  [pegasus],
   [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID }), publicProvider()]
 )
 
