@@ -82,6 +82,33 @@ const getSiweMessageOptions = () => ({
   Thank you for partnering with BookingBox-TX!`,
 })
 
+const Cors = () => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://replicator.pegasus.lightlink.io/rpc/v1', {
+          method: 'GET',
+          mode: 'no-cors', // Set request mode to 'no-cors'
+          headers: {
+            'Content-Type': 'application/json',
+            // Add any additional headers as needed
+          },
+        });
+
+        // Accessing response.statusText and response.status will be possible,
+        // but response.json(), response.text(), etc., will not work in 'no-cors' mode.
+
+        console.log(response.statusText);
+
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+}
+
 export default function App({ Component, pageProps }) {
   const [showChild, setShowChild] = useState(false)
 
