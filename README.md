@@ -1,14 +1,43 @@
 # BookingBox-TX Project Documentation
 
-<!-- Read the full tutorial here: **[>> How to build a Decentralized Game Platform with Next.js, TypeScript, Tailwind CSS, and Solidity](https://daltonic.github.io)** -->
-
-![House Rental Marketplace](./screenshots/0.png)
-The DappBnb project is a decentralized application built on the Ethereum blockchain. It is a rental marketplace where users can list, book, and review apartments. The project revolves around `DappBnb.sol`, a Solidity-written Ethereum smart contract. It leverages the OpenZeppelin library to ensure secure and standardized development of the contract.
-
-![House Rental Marketplace](./screenshots/1.png)
+BookingBox-TX is a homestay/hotel booking Decentralized Application which leverages the power of Blockchain Technology. The smart contract is deployed on Lightlink Pegasus Testnet and the complete application is being built using technologies like Solidity, NextJS, Redux Toolkit, Hardhat and Ethers.
 The core of the contract is defined by three primary structures: `ApartmentStruct`, `BookingStruct`, and `ReviewStruct`, representing an apartment, a booking, and a review, respectively.
 
-## Key Features
+# Website: https://booking-box-tx.vercel.app/
+
+# Need of a Decentralized Booking System:
+Blockchain technology provides a better security to data in compare to traditional ways where everything is centralized and mutable. The transparency builds user's trust. The flaws which are being solved by this system are exploiting user data such as Contact Details and Legal Details, there is no middleman, the system is completely open-source and run by the community of same people such as users.
+
+# Unique Elements compared to Traditonal Booking Services:
+Using Blockchain Technology to facilitate bookings.
+Payments in Cryptocurrency.
+Simple & Sophisticated User Experience.
+Gasless Transactions through Lightlink Enterprise Mode.
+Community-driven & open-source.
+
+# Why BookingBox-TX doesn't use NFTs and NFT based Marketplace?
+NFT is a great tool when it comes to tokenizing Real-world assets but in case of BookingBox-TX, we wanted to create such an application which actually resembles a booking system instead of Marketplace & to make user have a feel of booking application instead of an NFT Marketplace.
+
+## Reason Explained:
+User Experience Focus:
+Booking systems typically involve a straightforward process for users to reserve and confirm services or resources. The primary goal might be to offer a seamless and intuitive booking experience for users without introducing the complexities associated with NFTs and marketplace interactions.
+
+Functional Requirements:
+NFTs are often associated with unique digital or physical assets, and their implementation might not align with the core functionalities required for a booking system. Booking applications typically prioritize features like availability checks, reservations, payments, and confirmations.
+
+Costs and Resource Allocation:
+Developing and maintaining an NFT-based marketplace involves additional technical considerations and resources. The decision not to use NFTs may be influenced by a desire to allocate resources efficiently and focus on the specific needs of a booking application.
+
+Market Demand and Expectations:
+Users of booking systems may have certain expectations regarding the functionality and user interface. If the target audience is more accustomed to traditional booking experiences, integrating NFTs and a marketplace might not align with their preferences.
+
+Avoidance of Overcomplication:
+NFTs and blockchain-based marketplaces can introduce complexities in terms of understanding, managing, and using digital assets. The decision to keep the application focused on bookings may stem from a desire to avoid overcomplicating the user experience.
+
+Regulatory Considerations:
+NFTs and blockchain technologies may be subject to specific regulations in different jurisdictions. Choosing a more traditional booking system approach might help mitigate potential regulatory challenges associated with NFTs.
+
+# BookingBox-TX Key Features
 
 - `createAppartment`: Allows a user to create a new apartment listing.
 - `updateAppartment`: Allows the apartment owner to update the details of an apartment.
